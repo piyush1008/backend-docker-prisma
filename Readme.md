@@ -16,3 +16,8 @@ docker run -p 5432:5432 -d --rm -e POSTGRES_PASSWORD=mysecretpassword --network 
 docker build -t userapp .
 docker run -d -p 3001:3001 -e DATABASE_URL=postgresql://postgres:mysecretpassword@postgres:5432/postgres --network prismanetwork userapp
 ```
+
+
+# Use Docker compose
+- Install docker compose 
+- docker-compose up
